@@ -55,8 +55,8 @@ def main():
         # Split the file path into seperate chunks
         split_path = elem.split('/')
 
-        # Looking for all Analyst folders in split_path
-        if 'Analyst' in split_path[1]:
+        # Looking for all user_name folders in split_path
+        if '' in split_path[1]:
             database_entry['user_name'] = split_path[1]
             database_entry['notes'] = split_path[2]
             # test_name is a constant
